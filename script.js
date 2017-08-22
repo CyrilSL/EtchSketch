@@ -28,10 +28,10 @@ $('document').ready(function(){
         for(var j=1;j<=val;j++)
         {
          //$('.'+i+'').append($n);
-         $('.'+i+'').append('<td class="inactive" id='+c+'> </td>');  
-         c++;
+         $('.'+i+'').append('<td class="false" id='+c+'> </td>');  
+             console.log(j);
+                c++;
         }
-        //console.log(i);
       }
     };
     
@@ -39,7 +39,8 @@ $('document').ready(function(){
     {
         console.log("Doing!");
         var t=this.id;
-        $('#'+t+'').removeClass('inactive').addClass('active');
+        console.log(this.class)
+        $('#'+t+'').removeClass('false').addClass('true');
     });
     
     
@@ -47,7 +48,7 @@ $('document').ready(function(){
         console.log('refresh');
         $("#tbl").remove();
         console.log("Table Removed");
-      $('#cont').load(tableGrid());
+        tableGrid();
       console.log('Reload Table and Grid');
      });
     

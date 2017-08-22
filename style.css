@@ -1,9 +1,9 @@
-.active{
+.true{
     background-color:#0000FF;
     border: 1px solid black;
     padding:15px;
 }
-.inactive{
+.false{
     border: 1px solid black;
     padding:15px;
     background-color:#FF00FF;
